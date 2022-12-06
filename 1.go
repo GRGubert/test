@@ -15,6 +15,7 @@ func main() {
 	fmt.Println(l)
 	l.Info("some info log")
 	l.Error(fmt.Errorf("some error"))
+	l.Warn("some warn")
 	if err := l.Close(); err != nil {
 		log.Fatalln(err)
 	}
